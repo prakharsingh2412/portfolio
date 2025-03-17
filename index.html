@@ -2,11 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<!-- header -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Image/Prakhar.jpg" alt="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Prakhar</span><br> Singh from India</h1>
+        </div>
+    </div>
+</div>
+<!-- about -->
+ <div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Image/PRAKHAR SINGH (210240101070).jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum odit facilis itaque dolore cumque id, illum necessitatibus laboriosam fugiat sequi ipsum quod omnis rem maxime nulla soluta hic consequatur!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-link"onclick="opentab('Achievements')">Achievements</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programing Language :-</span><br>Python, C++, Java Script, C</li>
+                        <li><span>Technology :-</span><br>Node Js, React Js, Express Js, Vite, Mongo DB, MySql</li>
+                        <li><span>Soft Skills :-</span><br>Stress Management, Time Management</li>
+                        <li><span>Language :-</span><br>Hindi, English</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Under Graduate (2021-2025) :-</span><br>Roorkee Institute of Technology(RIT)</li>
+                        <li><span>Inter School (2020-2021):-</span><br>Manipal Public School</li>
+                        <li><span>High School (2018-2019):-</span><br>Manipal Public School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Achievements">
+                    <ul>
+                        <li><span>Under Graduate (2021-2025) :-</span><br>Roorkee Institute of Technology(RIT)</li>
+                        <li><span>Inter School (2020-2021):-</span><br>Manipal Public School</li>
+                        <li><span>High School (2018-2019):-</span><br>Manipal Public School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="index.js"></script>
 </body>
 </html>
