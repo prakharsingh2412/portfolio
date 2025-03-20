@@ -30,7 +30,7 @@ Contributions are welcome! If you'd like to suggest improvements or report issue
 
 Email: Prakharsingh98765432@gmail.com
 
-LinkedIn: 
+LinkedIn: https://www.linkedin.com/in/prakhar-singh-a44655282/
 
 GitHub: https://github.com/prakharsingh2412
 
