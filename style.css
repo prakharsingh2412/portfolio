@@ -15,9 +15,6 @@ body{
     background-size: cover;
     background-position: center;
 }
-#header .container{
-    padding: 5px 10%;
-}
 .container{
     padding: 5px 10%;
 }
@@ -257,6 +254,14 @@ nav ul li a:hover:after{
     flex-direction: column;
     margin-bottom: 30px;
 }
+.contact-left i{
+    margin-top: 15px;
+    color: rgb(225, 27, 27);
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
 .contact-right{
     flex-basis: 60%;
     margin-bottom: 30px;
@@ -320,6 +325,136 @@ form input, form textarea{
 .copyright{
     width: 100%;
     text-align: center;
+    font-size: 20px;
     padding: 25px 0;
     background-color: rgb(27, 25, 25);
 }
+/* css for small size */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(Image/mobileimg.jpg);
+        width: 100%;
+    }
+    .header-text{
+        margin-top: 100px;
+        width: 150px;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: rgb(225, 27, 27);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.2s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-2{
+        margin-bottom: 14px;
+    }
+    .tab-link{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    form{
+        text-align: center;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}
+/* css for medium and tablet screen */
+@media (min-width: 600px) and (max-width: 900px) {
+    .header-text {
+      margin-top: 100px;
+      width: 100%;
+      font-size: 25px;
+    }
+    .header-text h1 {
+      font-size: 46px;
+    }
+    nav .fa-solid {
+      display: block;
+      font-size: 25px;
+    }
+    nav ul {
+      background: rgb(225, 27, 27);
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.2s;
+    }
+    nav ul li {
+      display: block;
+      margin: 25px;
+    }
+    nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+    .sub-title {
+      font-size: 50px;
+    }
+    .about-col-1, .about-col-2 {
+      flex-basis: 100%;
+    }
+    .about-col-2 {
+      margin-bottom: 14px;
+    }
+    .tab-link {
+      font-size: 24px;
+      margin-right: 20px;
+    }
+    .contact-left, .contact-right {
+      flex-basis: 100%;
+    }
+    .contact-left p{
+        font-size: 24px;
+    }
+    form {
+      text-align: center;
+    }
+    .copyright{
+        font-size: 20px;
+    }
+}
+  
