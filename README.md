@@ -4,7 +4,7 @@ Welcome to my portfolio! This project showcases my skills, experience, and proje
 
 🖼️ Preview
 
-You can check out my portfolio live at: 
+You can check out my portfolio live at: https://prakharsingh2412.github.io/portfolio/
 
 🚀 Features
 
