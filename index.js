@@ -31,11 +31,23 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbw119T_N78LBa8w8TbqWW
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response =>{
-        msg.innerHTML="Message sent successfully"
+        msg.innerHTML="Message sent successfully";
         setTimeout(function(){
             msg.innerHTML = ""
-        },500)
+        },1000)
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const button = document.getElementById('submitButton');
+    button.disabled = true;
+    button.textContent = 'Submitting...';
+    
+    setTimeout(() => {
+      button.disabled = false;
+      button.textContent = 'Submit';
+    }, 3550);
+  }
