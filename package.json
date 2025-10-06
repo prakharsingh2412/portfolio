@@ -4,10 +4,11 @@
   "description": "Portfolio Project",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-  "dev": "vite",
-  "build": "tailwindcss -i ./src/styles/index.css -o ./dist/output.css --minify && vite build",
-  "preview": "vite preview"
+  "scripts": { 
+    "dev": "vite", 
+    "build": "vite build",
+    "postbuild": "tailwindcss -i ./src/styles/index.css -o ./dist/output.css --minify",
+    "preview": "vite preview" 
   },
   "repository": {
     "type": "git",
