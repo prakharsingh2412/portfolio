@@ -31,6 +31,7 @@ export interface Education {
   institution: string;
   degree: string;
   year: string;
+  description?: string;
 }
 
 export type ThemeType = 'google' | 'netflix' | 'uber' | 'whatsapp';
