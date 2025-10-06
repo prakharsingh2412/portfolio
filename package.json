@@ -7,11 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "vite build"
   },
   "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.7",
@@ -45,7 +44,9 @@
     "input-otp": "^1.4.2",
     "lucide-react": "^0.544.0",
     "next-themes": "^0.4.6",
+    "react": "^19.2.0",
     "react-day-picker": "^9.11.0",
+    "react-dom": "^19.2.0",
     "react-hook-form": "^7.64.0",
     "react-resizable-panels": "^3.0.6",
     "recharts": "^3.2.1",
