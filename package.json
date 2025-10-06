@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
   "dev": "vite",
-  "build": "vite build",
-  "postbuild": "tailwindcss -i ./src/styles/index.css -o ./dist/output.css --minify",
+  "build": "tailwindcss -i ./src/styles/index.css -o ./dist/output.css --minify && vite build",
   "preview": "vite preview"
   },
   "repository": {
