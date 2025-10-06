@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "postinstall": "tailwindcss -i ./src/index.css -o ./dist/output.css --minify"
+  "dev": "vite",
+  "build": "vite build",
+  "postbuild": "tailwindcss -i ./src/styles/index.css -o ./dist/output.css --minify",
+  "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -48,6 +48,7 @@
     "@radix-ui/react-toggle": "^1.1.10",
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.2.8",
+    "@tailwindcss/vite": "^4.1.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -65,7 +66,6 @@
     "vaul": "^1.1.2"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.14",
     "@types/node": "^24.6.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
@@ -74,5 +74,11 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
     "vite": "^7.1.9"
-  }
+  },
+  "engines": {
+  "node": "20.x",
+  "npm": "10.x"
 }
+}
+
+
